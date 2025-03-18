@@ -10,6 +10,7 @@ import {
 } from "drizzle-orm/pg-core";
 import { streaksTable } from "./streaksSchema";
 
+//When modifying any schema, you will then need to run npm run db:generate followed by npm run db:migrate for the changes to take affect
 export const streakEntriesTable = pgTable(
   "streak_entries",
   {
